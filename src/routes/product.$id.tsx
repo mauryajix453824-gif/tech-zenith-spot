@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Check, Heart, Minus, Plus, Shield, Star, Truck } from "lucide-react";
 import { toast } from "sonner";
 import { ProductCard } from "@/components/ProductCard";
-import { findProduct, relatedProducts } from "@/lib/products";
+import { findProduct, relatedProducts, type Product } from "@/lib/products";
 import { store, useHydrated, useStore } from "@/lib/store";
 import { cn } from "@/lib/utils";
 
