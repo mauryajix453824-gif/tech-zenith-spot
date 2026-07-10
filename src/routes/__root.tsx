@@ -81,17 +81,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Shop the latest phones, laptops, audio, wearables and gaming gear at Device Hub. Free 2-day shipping, secure checkout, and a warranty you can trust.",
+          "Discover the latest phones, laptops, audio, wearables and gaming gear. Free shipping and 30-day returns.",
       },
       { name: "author", content: "Device Hub" },
       { property: "og:title", content: "Device Hub — Premium Electronics & Gadgets" },
       {
         property: "og:description",
-        content: "Premium devices for students, pros, gamers and creators.",
+        content: "Discover the latest phones, laptops, audio, wearables and gaming gear. Free shipping and 30-day returns.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "theme-color", content: "#0F172A" },
+      { name: "twitter:title", content: "Device Hub — Premium Electronics & Gadgets" },
+      { name: "twitter:description", content: "Discover the latest phones, laptops, audio, wearables and gaming gear. Free shipping and 30-day returns." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/07c78c89-566b-458e-a0b4-c816a57cc33a/id-preview-904fd67f--0f6baf56-54e5-4d2d-9e2a-dd5992e4c67a.lovable.app-1783676194203.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/07c78c89-566b-458e-a0b4-c816a57cc33a/id-preview-904fd67f--0f6baf56-54e5-4d2d-9e2a-dd5992e4c67a.lovable.app-1783676194203.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
