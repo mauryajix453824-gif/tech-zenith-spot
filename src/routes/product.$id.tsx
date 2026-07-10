@@ -41,9 +41,6 @@ function ProductDetail() {
   const [storage, setStorage] = useState<string | undefined>(product.storage?.[0]);
   const [qty, setQty] = useState(1);
   const hydrated = useHydrated();
-  const [storage, setStorage] = useState(product.storage?.[0]);
-  const [qty, setQty] = useState(1);
-  const hydrated = useHydrated();
   const inWishlist = useStore((s) => s.wishlist.includes(product.id)) && hydrated;
 
   useEffect(() => {
