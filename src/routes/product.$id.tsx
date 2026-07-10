@@ -34,9 +34,13 @@ export const Route = createFileRoute("/product/$id")({
 });
 
 function ProductDetail() {
-  const { product } = Route.useLoaderData();
+  const data = Route.useLoaderData() as { product: Product };
+  const product = data.product;
   const [imgIdx, setImgIdx] = useState(0);
-  const [color, setColor] = useState(product.colors[0]);
+  const [color, setColor] = useState<string>(product.colors[0]);
+  const [storage, setStorage] = useState<string | undefined>(product.storage?.[0]);
+  const [qty, setQty] = useState(1);
+  const hydrated = useHydrated();
   const [storage, setStorage] = useState(product.storage?.[0]);
   const [qty, setQty] = useState(1);
   const hydrated = useHydrated();
